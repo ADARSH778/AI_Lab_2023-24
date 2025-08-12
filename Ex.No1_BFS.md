@@ -21,7 +21,7 @@ graph = {
  '2' : [],
  '4' : ['8'],
  '8' : []
- }
+}
 visited = [] 
 queue = []     
 def bfs(visited, graph, node):
