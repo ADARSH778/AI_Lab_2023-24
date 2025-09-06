@@ -46,18 +46,38 @@ Consider the following facts and represent them in predicate form: <br>
 Convert the facts in predicate form to clauses and then prove by resolution: “Steve likes BK301 course”<br> 
 
 ### Program:
-
+```
+likes(steve,X):-easycourse(X).
+hard(sciencecourse).
+easycourse(X):-course(X,dept(havefun)).
+course(bk301,dept(havefun)).
+```
 
 ### Output:
+
+<img width="929" height="340" alt="Screenshot 2025-09-06 095126" src="https://github.com/user-attachments/assets/df48c947-94f5-45a6-8b7e-21ef16d53bb8" />
+
 
 ### Task 3:
 Consider the statement <br> 
 “This is a crime for an American to sell weapons to hostile nations. The Nano , enemy of America has some missiles and its missiles were sold it by Colonal West who is an American” <br> 
 Convert to Clause form and prove west is criminal by using Prolog.<br> 
 ### Program:
-
+```
+crime(X):-american(X),weapon(Y),sells(X,Y,Z),hostile(X,Z).
+hostile(X,Z):-enemy(Z,X).
+enemy(nano,west).
+american(west).
+weapon(Y):-missle(Y).
+missile(m1).
+owns(nano,m1).
+sells(west,Y,nano):-owns(nano,Y),missile(Y).
+```
 
 ### Output:
+
+<img width="935" height="347" alt="image" src="https://github.com/user-attachments/assets/83cdb8c0-ff14-42de-b502-a6492f95f1ee" />
+
 
 ### Result:
 Thus the prolog programs were executed successfully and the answer of query was found.
