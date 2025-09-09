@@ -68,7 +68,7 @@ crime(X):-american(X),weapon(Y),sells(X,Y,Z),hostile(X,Z).
 hostile(X,Z):-enemy(Z,X).
 enemy(nano,west).
 american(west).
-weapon(Y):-missle(Y).
+weapon(Y):-missile(Y).
 missile(m1).
 owns(nano,m1).
 sells(west,Y,nano):-owns(nano,Y),missile(Y).
