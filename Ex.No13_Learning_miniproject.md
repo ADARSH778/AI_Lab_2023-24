@@ -4,13 +4,21 @@
 ### AIM: 
 To write a program to train a classifier to predict the survival of passengers from the Titanic dataset.
 ###  Algorithm:
+
 Step 1: Start the program.
+
 Step 2: Load the Titanic dataset and check for missing values.
+
 Step 3: Preprocess the data by handling missing values and encoding categorical variables.
+
 Step 4: Split the dataset into training and testing sets.
+
 Step 5: Train the Random Forest Classifier using the training data.
+
 Step 6: Predict the survival outcomes for the test data.
+
 Step 7: Evaluate the model performance using accuracy, classification report, and confusion matrix.
+
 ### Program:
 ```python
 import pandas as pd
